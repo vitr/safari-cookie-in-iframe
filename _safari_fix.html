@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hack Page</title>
+  <script src="//cdn.jsdelivr.net/g/jquery@1.11.0"></script>
+  <script src="//cdn.jsdelivr.net/jquery.cookie/1.4.0/jquery.cookie.min.js"></script>
+</head>
+<body>
+  <h1>Where are my cookies?</h1>
+
+<script>
+  $.cookie('hack', 'hack');
+  window.location.replace(document.referrer);
+</script>
+</body>
+</html>

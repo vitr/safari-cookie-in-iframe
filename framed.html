@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Framed Page</title>
+  <script src="//cdn.jsdelivr.net/g/jquery@1.11.0"></script>
+  <script src="//cdn.jsdelivr.net/jquery.cookie/1.4.0/jquery.cookie.min.js"></script>
+</head>
+<body>
+  <h1>Where are my cookies?</h1>
+<script>
+  $.cookie('the_cookie', 'the_value');
+  if ($.cookie('the_cookie'))
+    alert("You've got cookies :)");
+  else
+    alert('Too bad :( No cookies for framed site :(');
+</script>
+</body>
+</html>
