@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Primary Site Fixed</title>
-  <script src="//cdn.jsdelivr.net/g/jquery@1.11.0"></script>
-  <script src="//cdn.jsdelivr.net/jquery.cookie/1.4.0/jquery.cookie.min.js"></script>
+    <title>Primary Site Fixed</title>
+    <script src="//cdn.jsdelivr.net/g/jquery@1.11.0"></script>
+    <script src="//cdn.jsdelivr.net/jquery.cookie/1.4.0/jquery.cookie.min.js"></script>
 </head>
 <body>
 
 <script>
-  if (!$.cookie('hacked'))
-  {
-    $.cookie('fixed', 'fixed',  { expires: 365, path: '/' }); // 1 year
-    window.location.replace("http://hacks.ryepnoy.com/_safari_fix.html");
-  }
+    var is_safari = navigator.userAgent.indexOf("Safari") > -1; // safari detection
+    if (is_safari) {
+        if (!$.cookie('hacked')) {
+            $.cookie('fixed', 'fixed', { expires: 365, path: '/' }); // 1 year
+            window.location.replace("http://hacks.ryepnoy.com/_safari_fix.html");
+        }
+    }
 </script>
-<iframe src="http://hacks.ryepnoy.com/framed.html" width="50%"  height="400" frameborder="2"></iframe>
+<iframe src="http://hacks.ryepnoy.com/framed.html" width="50%" height="400" frameborder="2"></iframe>
 
 </body>
 </html>

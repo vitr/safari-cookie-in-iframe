@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Hack Page</title>
+  <title></title>
   <script src="//cdn.jsdelivr.net/g/jquery@1.11.0"></script>
   <script src="//cdn.jsdelivr.net/jquery.cookie/1.4.0/jquery.cookie.min.js"></script>
 </head>
 <body>
-  <h1>Where are my cookies?</h1>
-
 <script>
   $.cookie('safari_cookie_fix', 'fixed');
+  console.log('safari fix has been applied'); // you may comment or delete this line
   window.location.replace(document.referrer);
 </script>
 </body>
