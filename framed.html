@@ -6,13 +6,15 @@
   <script src="//cdn.jsdelivr.net/jquery.cookie/1.4.0/jquery.cookie.min.js"></script>
 </head>
 <body>
-  <h1>Where are my cookies?</h1>
+  <h1>This is a framed site (http://hacks.ryepnoy.com/framed.html)</h1>
+  <h2>Where are my cookies?</h2>
+
 <script>
-  $.cookie('the_cookie', 'the_value');
+  $.cookie('the_cookie', 'the_value',  { expires: 365, path: '/' }); // 1 year
   if ($.cookie('the_cookie'))
     alert("You've got cookies :)");
   else
-    alert('Too bad :( No cookies for framed site :(');
+    alert('Too bad :( No cookies for framed sites :(');
 </script>
 </body>
 </html>
