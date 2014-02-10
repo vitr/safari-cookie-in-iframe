@@ -13,8 +13,9 @@
     <script>
         var is_safari = navigator.userAgent.indexOf("Safari") > -1; // safari detection
         if (is_safari) {
+            alert(navigator.userAgent);
             if (!$.cookie('hacked')) {
-                        alert(navigator.userAgent);
+                        
                 $.cookie('fixed', 'fixed', { expires: 365, path: '/' }); // 1 year
                 window.location.replace("http://hacks.ryepnoy.com/_safari_fix.html");
             }
