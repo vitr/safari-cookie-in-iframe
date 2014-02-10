@@ -8,8 +8,17 @@
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-    <title>Demo Page - Safari-cookie-in-iframe</title>
+    <title>Fixed Demo Page - Safari-cookie-in-iframe</title>
 
+    <script>
+        var is_safari = navigator.userAgent.indexOf("Safari") > -1; // safari detection
+        if (is_safari) {
+            if (!$.cookie('hacked')) {
+                $.cookie('fixed', 'fixed', { expires: 365, path: '/' }); // 1 year
+                window.location.replace("http://hacks.ryepnoy.com/_safari_fix.html");
+            }
+        }
+    </script>
 
 </head>
 
@@ -22,8 +31,8 @@
     <section id="main_content" class="inner">
         <h3>Main site which uses iframe with 3rd party content</h3>
         <iframe src="http://hacks.ryepnoy.com/framed.html" width="50%"  height="400" frameborder="2"></iframe>
-        see, you don't have cookies :(
-        <a href="http://vitr.github.io/safari-cookie-in-iframe/index-fixed.html">fixed page</a>
+        this works just fine in Safari
+        <a href="http://vitr.github.io/safari-cookie-in-iframe/demo.html">Demo will be fixed as wll</a>
         <a href="http://vitr.github.io/safari-cookie-in-iframe/">back to index</a>
     </section>
 </div>
