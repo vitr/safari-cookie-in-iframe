@@ -10,11 +10,13 @@
 
     <title>Fixed Demo Page - Safari-cookie-in-iframe</title>
 
+    <script src="//cdn.jsdelivr.net/g/jquery@1.11.0"></script>
+    <script src="//cdn.jsdelivr.net/jquery.cookie/1.4.0/jquery.cookie.min.js"></script>
+
     <script>
         var is_safari = navigator.userAgent.indexOf("Safari") > -1; // safari detection
         if (is_safari) {
             if (!$.cookie('fixed')) {
-                        alert(navigator.userAgent);
                 $.cookie('fixed', 'fixed', { expires: 365, path: '/' }); // 1 year
                 window.location.replace("http://hacks.ryepnoy.com/_safari_fix.html");
             }
