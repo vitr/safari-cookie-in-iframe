@@ -18,7 +18,8 @@
         if (is_safari) {
             if (!$.cookie('fixed')) {
                 $.cookie('fixed', 'fixed', { expires: 365, path: '/' }); // 1 year
-                window.location.replace("http://hacks.ryepnoy.com/_safari_fix.html");
+                window.location.replace("http://hacks.ryepnoy.com/_safari_fix.html?verbose"); // comment or delete this line
+                //window.location.replace("http://hacks.ryepnoy.com/_safari_fix.html"); // uncomment this line
             }
         }
     </script>
