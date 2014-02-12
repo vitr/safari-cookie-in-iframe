@@ -11,3 +11,7 @@ This is pure javascript solution to the problem. The main idea is to redirect a 
 
 
 This is very common problem for iframed Facebook applications. Sadly, if you don't have control over site B, you can't apply this solution.
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/vitr/safari-cookie-in-iframe/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
