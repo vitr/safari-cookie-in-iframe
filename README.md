@@ -1,4 +1,4 @@
-Safari 3rd party cookie in iframe workaround
+## Safari 3rd party cookie in iframe workaround
 =======================
 
 The problem: site A (main site) loads site B (framed site) in iframe. Site B sets some cookies (e.g. store session data), to function properly.
