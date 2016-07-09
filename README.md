@@ -13,3 +13,7 @@ This is pure javascript solution to the problem. The main idea is to redirect a 
 
 
 This is very common problem for iframed Facebook applications. Sadly, if you don't have control over site B, you can't apply this solution.
+
+### 2016 Update
+I'm not sure how this will work with new safari settings, it doesn't for me((
+![](https://camo.githubusercontent.com/f6e6a28460cc3539fc4ac1a2480a99fe981b016a/687474703a2f2f696d6167652e70726e747363722e636f6d2f696d6167652f34303063626435393834656634363931626632616539653933636231356232622e706e67)
