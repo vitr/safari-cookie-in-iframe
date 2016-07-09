@@ -1,7 +1,8 @@
 ## Safari 3rd party cookie in iframe workaround
-=======================
+
 The demo: http://vitr.github.io/safari-cookie-in-iframe/demo.html
-=======================
+
+
 The problem: site A (main site) loads site B (framed site) in iframe. Site B sets some cookies (e.g. store session data), to function properly.
 These cookies are called 3rd party cookies, as they are not set by site A.
 
