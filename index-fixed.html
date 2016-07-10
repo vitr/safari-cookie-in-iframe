@@ -16,6 +16,7 @@
     <script>
         var is_safari = navigator.userAgent.indexOf("Safari") > -1; // safari detection
         if (is_safari) {
+            alert(navigator.userAgent);
             if (!$.cookie('fixed')) {
                 $.cookie('fixed', 'fixed', { expires: 365, path: '/' }); // 1 year
                 window.location.replace("http://vit-demos.appspot.com/_safari_fix.html?verbose"); // comment or delete this line
