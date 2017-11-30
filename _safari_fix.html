@@ -2,12 +2,10 @@
 <html>
 <head>
   <title></title>
-  <script src="//cdn.jsdelivr.net/g/jquery@1.11.0"></script>
-  <script src="//cdn.jsdelivr.net/jquery.cookie/1.4.0/jquery.cookie.min.js"></script>
 </head>
 <body>
 <script>
-  $.cookie('safari_cookie_fix', 'fixed');
+  document.cookie = 'safari_cookie_fix=fixed; path=/';
   if (window.location.href.indexOf('verbose') > -1) { // you should remove or comment this line
     alert('safari fix has been applied'); // you should remove or comment this line
     setTimeout(window.location.replace(document.referrer), 2000); // you should remove or comment this line
